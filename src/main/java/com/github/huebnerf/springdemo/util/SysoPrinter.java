@@ -1,18 +1,22 @@
-package com.github.huebnerf.springdemo;
+package com.github.huebnerf.springdemo.util;
 
 import org.springframework.stereotype.Component;
 
 @Component // Markiert eine Spring Component (automatisch verwaltetes "managed" Bean)
 public class SysoPrinter {
 
-    private String message = "";
+    private String message;
 
-    void setMessage(String message) {
+    public void setMessage(String message) {
         this.message = message;
     }
 
-    void printMessage() {
+    public void printMessage() {
         System.out.println(message);
+    }
+
+    public void lineBreak() {
+        System.out.println();
     }
 
 }
