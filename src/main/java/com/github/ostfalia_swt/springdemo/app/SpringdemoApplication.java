@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan("com.github.ostfalia_swt.springdemo.util")
 public class SpringdemoApplication {
 
-    // Markiert property setter oder constructor für automatische injection
+    // Markiert property, setter oder constructor für automatische injection
     @Autowired
     private SysoPrinter sysoPrinter;
 
