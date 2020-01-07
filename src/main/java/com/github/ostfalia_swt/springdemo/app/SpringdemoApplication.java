@@ -1,17 +1,20 @@
-package com.github.huebnerf.springdemo.app;
+package com.github.ostfalia_swt.springdemo.app;
 
-import com.github.huebnerf.springdemo.util.SysoPrinter;
+import com.github.ostfalia_swt.springdemo.util.SysoPrinter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication // Markiert Main- (Start-) Klasse des Programms
-@ComponentScan("com.github.huebnerf.springdemo.util") // Startet einen Scan für Spring Components im Package "com.github.huebnerf.sysoprinter"
+// Markiert Main- (Start-) Klasse des Programms
+@SpringBootApplication
+// Startet einen Scan für Spring Components im Package "com.github.huebnerf.sysoprinter"
+@ComponentScan("com.github.ostfalia_swt.springdemo.util")
 public class SpringdemoApplication {
 
-    @Autowired // Markiert property setter oder constructor für automatische injection
+    // Markiert property setter oder constructor für automatische injection
+    @Autowired
     private SysoPrinter sysoPrinter;
 
     public static void main(String[] args) {
